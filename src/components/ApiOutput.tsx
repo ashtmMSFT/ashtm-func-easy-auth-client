@@ -1,7 +1,7 @@
 import { useMsal } from "@azure/msal-react";
 import { useEffect, useState } from "react";
 import { loginRequest } from "../authConfig";
-import { getApiOutput } from "../services/homeApi";
+import { getApiOutput } from "../services/protectedApi";
 
 export default function ApiOutput() {
   let [output, setOutput] = useState("Loading...");
